@@ -1,0 +1,10 @@
+import turtle
+c = turtle.Turtle()
+c.penup()
+c.setpos(-200,200)
+c.begin_fill()
+c.color("red")
+for s in range(4):
+  c.forward(200)
+  c.right(90)
+c.end_fill
