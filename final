@@ -1,0 +1,12 @@
+import turtle;c = turtle.Turtle();c.penup();c.setpos(-200,200);c.pendown();c.color("red");c.begin_fill()
+for s in range(4):
+  c.forward(400);c.right(90)
+posX = -200;posY = 200;l = 1;n = 1;c.end_fill();c.color("black")
+for x in range (8):
+  c.pendown()
+  for x in range(4):
+    c.begin_fill()
+    for x2 in range(4):
+      c.forward(50);c.right(90)
+    c.end_fill();c.penup();c.forward(100)
+  posX = posX + 50*(n);posY = posY - 50;n = n * -1;c.setpos(posX,posY)
